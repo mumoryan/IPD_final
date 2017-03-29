@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/stil-logo.png">
+<title>stil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+    @font-face{
+        font-family: "kayak";
+        src: url("fonts/Kayak Sans Regular.otf");
+    }    
+    @font-face{
+        font-family: "kayak-sans-bold-italic";
+        src: url("fonts/Kayak Sans Bold (Italic).otf");
+    }
+    body,h1,h2,h3,h4,h5,h6 {
+        font-family: 'kayak', sans-serif;
+    }
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('images/calm-lady-lake.jpg');
+        min-height: 100%;
+        -webkit-backface-visability: hidden;
+    }
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("images/team.jpeg");
+        min-height: 400px;
+    }
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("http://aquanticryan.com/IPD_images_temp/placeholder.png");
+        min-height: 400px;
+    }
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
+</style>
+    </head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2">
+    <a id="home-button" href="#home"><img src="images/stil-logo-with-text.png" height="45"></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small opacity">
+        <a href="#how-it-work" class="w3-bar-item w3-button w3-hover-indigo">How it works</a>
+        <a href="#features" class="w3-bar-item w3-button w3-hover-indigo">Features</a>
+        <a href="#meet-the-team" class="w3-bar-item w3-button w3-hover-indigo">Meet the team</a>
+        <a href="http://www.tauber.umich.edu/events-training/integrated-product-development/2017" class="w3-bar-item w3-button w3-hide-small w3-hover-red" target='_blank'>IPD Home</a>
+    </div>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+    <div id="name" style="white-space:nowrap; font-family: ">stil</div>
+    <div id="brief-explaination" style="white-space:nowrap;">Your personal stress management wristband</div>
+    <div id="price" style="white-space:nowrap;">$99</div>
+    <a href="#stilvideo" id="watch-video" class="w3-button w3-hide-small w3-hover-red">Watch video</a>
+    <div id="tagline">Be stil, be you.</div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="intro-container">
+<div class="w3-content w3-container w3-padding-64">
+    <div class="w3-center subtitles">Mindfulness. Focus. Performance.</div>
+    <p class="w3-center">STIL improves users’ mindfulness, focus, and performance. Designed for both mild anxiety sufferers and everyday stress management, STIL is a simple solution.</p>
+    <ul id="indent">
+        <li>Early warning system to enhance awareness</li>
+        <li>Proven, field-tested CBT exercises</li>
+        <li>Seamless, simple technology and design</li>
+    </ul>
+</div>
+</div>
+<!-- Container (How it works Section) -->
+
+    
+<div id="stilvideo" class="w3-center"><iframe src="https://player.vimeo.com/video/210288697" width="900" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    
+<div id="how-it-work" class="w3-content w3-container w3-padding-64">
+    <div class="w3-center subtitles">How it works</div>
+</div>
+    <div>
+        <img id="how-it-works-image" src='images/HowItWorks.jpg'>
+    </div>
+<div id="features" class="w3-content w3-container w3-padding-64">
+    <div class="w3-center subtitles">Features</div>
+    
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img id='feature1' src="images/lookslike-blue.png" class="w3-round w3-image" alt="Photo of our product on the wrist" style="height:320px;display:inline;">
+          <br/>
+          <br/>
+          <div id="circle1" class='hoverColor' style='display:inline-block; width:30px; height:30px; border-radius:100%; background-color:#4CFDFD;'></div>
+          <div id="circle2" style='display:inline-block; width:30px; height:30px; border-radius:100%; background-image: url("images/lookslike-texture.png")'></div>
+          <div id="circle3" style='display:inline-block; width:30px; height:30px; border-radius:100%; background-color:#FFCBA8;'></div>
+          <div id="circle4" style='display:inline-block; width:30px; height:30px; border-radius:100%; background-image:url("images/lookslike-texture2.png");'></div>
+          <div id="circle5" style='display:inline-block; width:30px; height:30px; border-radius:100%; background-color:#848484;'></div>
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <div style='background-color: #85D9BF;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);padding: 10px;font-size: 11;color:white;'>
+                <p style='margin-left: 5%;margin-right:5%;'>Simple Design + Cutting-Edge Technology</p>
+
+            <ul style='margin-left: 5%;margin-right:5%;'>
+                <li>Precise measurement of your body’s own stress indicators</li>
+    <li>Adaptive artificial intelligence algorithms improve Stil’s performance over time</li>
+    <li>Stress-activated alerts short circuit your stress cycle with guided meditations</li>
+    <li>On-demand guided meditations</li>
+                <li>Discreet, seamless design</li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Container (Portfolio Section) -->
+<div id="meet-the-team" class=" w3-container w3-padding-64">
+  <div class="w3-center subtitles">Meet the team</div>
+  <p class="w3-center"><em>IPD team peach 2017</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center" style="font-size:11pt;">
+    <div class="w3-col m3">
+      <img src="images/team/Katie.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Katie Redman">
+        <p>Project Operations Manager</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/team/Scott.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Scott Mathews">
+        <p>Product Marketing Manager</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/team/Jatin.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+        <p>Maker and Product Design Lead</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/team/Mani.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        <p>Hardware Interface Design Lead</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section" style="font-size:11pt;">
+    <div class="w3-col m3">
+      <img src="images/team/Isra.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        <p>VP of Design</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/team/Ryan.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+        <p>Lead Front-end Developer</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/team/Sheetanshu.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+        <p>Lead UX Designer</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2  w3-display-container w3-opacity-min">
+    <div id="filter"></div>
+    
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">Our mission:</span>
+    <p class="w3-text-light-grey w3-wide">To change how we react to stress at a global scale, one user at a time.</p>
+    <p class="w3-text-light-grey w3-wide">We believe that simple solutions are best and time-tested, meditative breathing is a scalable, powerful tool that will improve the wellness, focus, and performance of each one of us. </p>
+  </div>
+</div>
+    
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="opacity: 0.9; background-image: url(images/navi-blue-background.jpg);">
+  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <p style="font-size: 11pt; color: white;">All rights reserved for IPD Team Peach, 2017</p>
+  </div>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+    
+$( "#circle1" ).hover(
+function() {
+    $(this).css('border', '2px solid bisque'),
+    $("#feature1").attr("src", "images/lookslike-blue.png")
+    },
+function(){ 
+    $(this).css('border', 'none')
+    }
+);
+
+$( "#circle2" ).hover(
+function() {
+    $(this).css('border', '2px solid bisque'),
+    $("#feature1").attr("src", "images/lookslike-carbon.png")
+    },
+function(){ 
+    $(this).css('border', 'none')
+    }
+);
+
+$( "#circle3" ).hover(
+function() {
+    $(this).css('border', '2px solid bisque'),
+    $("#feature1").attr("src", "images/lookslike-lightorange.png")
+    },
+function(){ 
+    $(this).css('border', 'none')
+    }
+);
+$( "#circle4" ).hover(
+function() {
+    $(this).css('border', '2px solid bisque'),
+    $("#feature1").attr("src", "images/lookslike-limegreen.png")
+},
+function(){ 
+    $(this).css('border', 'none') }
+);
+
+$( "#circle5" ).hover(
+function() {
+        $(this).css('border', '2px solid bisque'),$("#feature1").attr("src", "images/lookslike-metalic.png")
+    },
+function(){ 
+        $(this).css('border', 'none') 
+    }
+);
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
